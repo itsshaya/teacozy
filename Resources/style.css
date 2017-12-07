@@ -19,6 +19,8 @@ header{
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
+  background-color: black;
 }
 header a:link, a:visited{
   color: seashell;
@@ -35,11 +37,11 @@ header a:link, a:visited{
 .nav span{
    text-decoration: underline;
    padding-right: 20px;
-   z-index: 5;
 }
 /**end of header**/
 
 /**body**/
+
 /**Container**/
 .container{
   display: block;
@@ -48,7 +50,13 @@ header a:link, a:visited{
   margin:auto;
   text-align: center;
 }
+
+h2, h3, h4{
+  margin: 0;
+  padding: 10px;
+}
 /**contrainer**/
+
 /**item-mission**/
 #mission.imgmission{
   display: flex;
@@ -72,16 +80,16 @@ header a:link, a:visited{
   margin: 0;
 }
 
-.content h2, h4{
-  padding: 0;
-}
 /**item-mission**/
+
 /**tea**/
 #teas{
   width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 #teas h2{
@@ -100,37 +108,53 @@ header a:link, a:visited{
   margin: 10px;
   display: block;
   padding-bottom: 10px;
+  padding-top: 12px;
+
 }
 
-.catalogue span{
-  display: block
-  text-align: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 /**tea**/
+
 /**location**/
 #locations.imgloc{
   height: 500px;
   width: 1200px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-image: no-repeat;
   margin: 0 auto;
-}
+  padding-top: 75px;
 
+}
 
 .addy{
-display: inline-block;
+display: inline-flex;
 justify-content: center;
-align-items: stretch;
 width: 300px;
 height: 300px;
-padding-right: 40px;
-padding-top: 15px;
 opacity: 1;
 background-color: black;
-line-height: 280%
+line-height: 280%;
+margin-left: 40px;
+margin-top: 15px;
 }
+
+.addy span{
+text-align: center;
+}
+
+#dt{
+  padding: 0 60px;
+}
+
+#eb{
+  padding: 0 10px;
+}
+
+#oak{
+  padding: 0 40px;
+}
+
 /**location**/
+
 /**footer**/
 .contact{
   height: 200px;
@@ -142,4 +166,8 @@ line-height: 280%
   text-align: left;
   padding-left: 20px;
   margin: 0;
+}
+
+.lineheight{
+  line-height: 1.8em;
 }
